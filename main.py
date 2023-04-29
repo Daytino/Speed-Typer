@@ -65,6 +65,8 @@ def end_words():
         else:
             if delta <= 30:
                 return render_template("end.html", victory=1)
+            else:
+                return render_template("end.html", victory=4)
     else:
         return render_template("end.html", victory=2)
 
@@ -106,6 +108,8 @@ def end_letters():
         else:
             if delta <= 30:
                 return render_template("end.html", victory=1)
+            else:
+                return render_template("end.html", victory=4)
     else:
         return render_template("end.html", victory=2)
 
