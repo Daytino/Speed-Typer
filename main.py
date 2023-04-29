@@ -8,14 +8,17 @@ import datetime
 app = Flask(__name__)
 
 symbols = list("qwertyuiopasdfghjklzxcvbnm123456789")
-wrds = str()
+words = wrds = str()
 letters = str()
+
+root = tkinter.Tk()
+root.withdraw()
 
 
 def generate_words():
     global wrds
-    words = str()
 
+    words = str()
     for i in range(5):
         words += requests.get("https://random-word-api.herokuapp.com/word").text[2:-2]
         words += " "
@@ -50,9 +53,9 @@ def end_words():
     global wrds
     output = request.form
     text = output["text"]
-    root = tkinter.Tk()
-    root.withdraw()
+
     clipboard = root.clipboard_get()
+
     d2 = datetime.datetime.now()
     delta = (d2 - d1).seconds
 
@@ -92,8 +95,6 @@ def end_letters():
     output = request.form
     text = output["text"]
 
-    root = tkinter.Tk()
-    root.withdraw()
     clipboard = root.clipboard_get()
 
     d2 = datetime.datetime.now()
