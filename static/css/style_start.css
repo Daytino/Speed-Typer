@@ -1,0 +1,70 @@
+.btn {
+    padding: 0px 25px;
+    margin: 0 15px 15px 0;
+    border: none;
+    outline: none;
+    position: relative;
+    background: hsla(177, 87%, 79%, 1);
+    background: hsla(239, 100%, 67%, 1);
+    background: linear-gradient(140deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    background: -moz-linear-gradient(140deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    background: -webkit-linear-gradient(140deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+	border-radius: 50px;
+	height: 95px;
+	width: 180px;
+    cursor: pointer;
+	line-height: 46px;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: "Comic Sans MS";
+	color: #fff;
+}
+
+.btn:hover {
+	transition: all 0.5s;
+	background: hsla(239, 100%, 67%, 1);
+    background: linear-gradient(140deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 95%);
+    background: -moz-linear-gradient(140deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 95%);
+    background: -webkit-linear-gradient(140deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 95%);
+}
+
+.text1 {
+    color: #c8cefd;
+    font-family: "Comic Sans MS";
+    font-size: 30px;
+}
+
+.title {
+    font-size: 75px;
+    font-family: "Comic Sans MS";
+    font-weight: bolder;
+    color: #412c5f;
+}
+
+.area {
+    resize: none;
+    height: 180px;
+    width: 600px;
+    font-size: 24px;
+    border-radius: 10px;
+    font-family: "Comic Sans MS";
+    outline: none;
+    wrap: hard;
+    border-radius: 10px;
+}
+
+.area:focus {
+    border-width: 2px;
+    border-color: #3c5d8c;
+}
+
+.words {
+    font-size: 35px;
+    font-family: "Calibri";
+    color: #cd0000;
+}
+
+.username {
+    font-size: 35px;
+    font-family: "Comic Sans MS";
+}
