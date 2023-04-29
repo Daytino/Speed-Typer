@@ -3,7 +3,6 @@ from random import randint
 import threading
 import tkinter
 import requests
-import playsound
 import datetime
 
 app = Flask(__name__)
@@ -62,7 +61,6 @@ def end_words():
             return render_template("end.html", victory=3)
         else:
             if delta <= 30:
-                playsound.playsound("static/victory.wav")
                 return render_template("end.html", victory=1)
     else:
         return render_template("end.html", victory=2)
@@ -106,7 +104,6 @@ def end_letters():
             return render_template("end.html", victory=3)
         else:
             if delta <= 30:
-                playsound.playsound("static/victory.wav")
                 return render_template("end.html", victory=1)
     else:
         return render_template("end.html", victory=2)
