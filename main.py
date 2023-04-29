@@ -11,9 +11,6 @@ symbols = list("qwertyuiopasdfghjklzxcvbnm123456789")
 words = wrds = str()
 letters = str()
 
-root = tkinter.Tk()
-root.withdraw()
-
 
 def generate_words():
     global wrds
@@ -53,7 +50,8 @@ def end_words():
     global wrds
     output = request.form
     text = output["text"]
-
+    root = tkinter.Tk()
+    root.withdraw()
     clipboard = root.clipboard_get()
 
     d2 = datetime.datetime.now()
@@ -97,6 +95,8 @@ def end_letters():
     output = request.form
     text = output["text"]
 
+    root = tkinter.Tk()
+    root.withdraw()
     clipboard = root.clipboard_get()
 
     d2 = datetime.datetime.now()
